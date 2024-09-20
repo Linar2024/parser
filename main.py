@@ -9,5 +9,5 @@ def parser():
     for n in news:
         print(n.find("div", {"class": "hds-content-item-inner"}).get_text().strip())
         file.write(n.find("div", {"class": "hds-content-item-inner"}).get_text().strip())
-        file.write('/n')
+        file.write('\n')
 parser()
